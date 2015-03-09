@@ -1,0 +1,10 @@
+--- src/Makefile.orig	2015-03-10 02:15:13.546985686 +0900
++++ src/Makefile	2015-03-10 02:15:28.814985514 +0900
+@@ -44,7 +44,6 @@
+ 	install -m755 $(TARGET_LIB) $(PREFIX)/lib/$(TARGET_LIB).$(VER)
+ 	ln -sf $(PREFIX)/lib/$(TARGET_LIB).$(VER) $(PREFIX)/lib/$(TARGET_LIB).$(MAJOR)
+ 	ln -sf $(PREFIX)/lib/$(TARGET_LIB).$(MAJOR) $(PREFIX)/lib/$(TARGET_LIB)
+-	ldconfig
+ 
+ install-headers:
+ 	mkdir -p $(DEST_HEADER)
