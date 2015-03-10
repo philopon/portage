@@ -24,4 +24,7 @@ src_install() {
 	insinto "${udevdir}"/rules.d
 	doins etc/99-pt3.rules
 	linux-mod_src_install
+
+	insinto /usr/lib/modules-load.d/
+	doins "${FILESDIR}"/pt3.conf
 }
