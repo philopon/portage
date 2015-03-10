@@ -1,0 +1,19 @@
+#!/sbin/runscript
+
+CHINACHU_USER=${CHINACHU_USER:-chinachu}
+
+command=/opt/chinachu/chinachu
+command_args="service operator execute"
+pidfile=/var/run/chinachu-operator.pid
+required_files="/opt/chinachu/config.json"
+
+start_stop_daemon_args="--background --make-pidfile --user \"${CHINACHU_USER}\""
+
+stop(){
+  if [ -f $pidfile ]; then
+    PID=`cat $pidfile`
+    PGID=`ps -p "$PID" -o pgrp | grep -v PGRP`
+    [ "$PGID" != "" ] && kill -QUIT -`echo $PGID` || rm -f $pidfile
+    rm $pidfile
+  fi
+}
