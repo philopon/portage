@@ -11,5 +11,5 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="sys-apps/pcsc-lite sys-apps/pcsc-tools sys-kernel/pt3 app-crypt/ccid media-tv/arib25 media-tv/recpt1"
+DEPEND="media-tv/chinachu sys-apps/pcsc-lite sys-apps/pcsc-tools sys-kernel/pt3 app-crypt/ccid media-tv/arib25 media-tv/recpt1"
 RDEPEND="${DEPEND}"
