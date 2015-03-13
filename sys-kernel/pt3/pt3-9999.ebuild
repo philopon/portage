@@ -10,7 +10,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 BUILD_TARGETS="all"
-MODULE_NAMES="pt3_drv(kernel/drivers/video:${S}:${S})"
+MODULE_NAMES="pt3_drv(pt3/drivers/video:${S}:${S})"
 
 RDEPEND="sys-fs/udev"
 DEPEND="${RDEPEND} virtual/pkgconfig"
