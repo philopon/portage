@@ -31,7 +31,6 @@ src_compile(){
 
 src_install(){
 	insinto $INS_INTO
-	exeinto $INS_INTO
 
 	cp -R `ls -A` ${D}/$INS_INTO
 
@@ -39,4 +38,6 @@ src_install(){
 
 	doinitd "${FILESDIR}/chinachu-wui"
 	doinitd "${FILESDIR}/chinachu-operator"
+
+	dosym $INS_INTO/chinachu /usr/bin/chinachu
 }
