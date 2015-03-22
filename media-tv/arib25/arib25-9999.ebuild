@@ -8,7 +8,7 @@ EGIT_REPO_URI="https://github.com/stz2012/libarib25"
 LICENSE=""
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 src_prepare() {
 	epatch "${FILESDIR}/${PV}/disable-ldconfig.patch"

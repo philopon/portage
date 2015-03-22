@@ -8,7 +8,7 @@ EGIT_REPO_URI="https://github.com/stz2012/recpt1"
 LICENSE=""
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 RDEPEND="media-tv/arib25"
 DEPEND="${RDEPEND}"

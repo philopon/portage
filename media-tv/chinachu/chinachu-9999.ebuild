@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/kanreisa/Chinachu"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="media-libs/x264"

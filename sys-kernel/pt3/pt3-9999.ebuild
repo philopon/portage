@@ -8,7 +8,7 @@ EGIT_REPO_URI="https://github.com/m-tsudo/pt3"
 LICENSE="GPL-3"
 
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 BUILD_TARGETS="all"
 MODULE_NAMES="pt3_drv(pt3/drivers/video:${S}:${S})"
 

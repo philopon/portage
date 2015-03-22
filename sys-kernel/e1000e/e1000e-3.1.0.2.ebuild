@@ -12,7 +12,7 @@ SRC_URI="http://downloadmirror.intel.com/15817/eng/e1000e-3.1.0.2.tar.gz"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 BUILD_TARGETS="clean default"
 MODULE_NAMES="e1000e(ethernet/drivers:${S}/src:${S}/src)"
